@@ -1,0 +1,15 @@
+{
+  "name": "fresh-mint-fade-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Based on gtksourceview-3.0 classic theme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/murrrf/fresh-mint-fade-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
