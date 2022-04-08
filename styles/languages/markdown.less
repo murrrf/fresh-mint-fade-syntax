@@ -1,0 +1,83 @@
+// Markdown style
+
+.syntax--text.syntax--md {
+  .syntax--md {
+
+    &.syntax--heading {
+        color: @color-heading;
+        font-weight: bold;
+    }
+
+    &.syntax--hr {
+        color: @color-heading;
+        font-weight: bold;
+    }
+
+    &.syntax--bold,
+    &.syntax--strong.syntax--emphasis {
+        color: @color-strong;
+        font-weight: bold;
+    }
+
+    &.syntax--italic,
+    &.syntax--emphasis:not(.syntax--strong) {
+        color: @color-text;
+        font-style: italic;
+    }
+
+    &.syntax--underline {
+        text-decoration: underline;
+    }
+
+    &.syntax--link {
+        color: @blue;
+        text-decoration: underline;
+    }
+
+    &.syntax--image {
+        color: @green;
+    }
+
+    &.syntax--strike {
+        text-decoration: line-through;
+    }
+
+    &.syntax--list {
+        color: @color-text;
+        & > .syntax--punctuation {
+            color: @color-list;
+        }
+    }
+
+    &.syntax--quote {
+        color: @color-text;
+        & > .syntax--punctuation {
+            color: @color-emphasis;
+        }
+    }
+
+    &.syntax--table {
+        color: @color-text;
+    }
+
+    &.syntax--code {
+      &:not(.syntax--fenced) {
+        background: fade(@java, 10%);
+      }
+
+      &.syntax--fenced {
+        color: @color-code;
+          // background: fade(@gray, 15%);
+        &.syntax--info {}
+
+        .syntax--embedded.syntax--source {
+            // color: @color-text;
+        }
+
+         .line.code-block & {
+           background: transparent;
+         }
+      }
+    }
+  }
+}
