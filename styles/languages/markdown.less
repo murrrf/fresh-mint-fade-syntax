@@ -30,7 +30,7 @@
     }
 
     &.syntax--link {
-        color: @blue;
+        color: @color-link;
         text-decoration: underline;
     }
 
@@ -62,7 +62,7 @@
 
     &.syntax--code {
       &:not(.syntax--fenced) {
-        background: fade(@java, 10%);
+        background-color: fade(@color-code, 10%);
       }
 
       &.syntax--fenced {
@@ -79,5 +79,13 @@
          }
       }
     }
+
+    &.syntax--line-break,
+    .invisible-character.trailing-whitespace {
+        color: @color-invisible-character;
+        background-color: @color-warning;
+    }
+
   }
+
 }
